@@ -27,3 +27,16 @@ function round(value, decimals) {
 function randInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+function user(){
+    let age = Number(prompt("Hello there Guy/Gal/Non-binary pal, How old are you?"))
+    if (age >=60){
+        console.log(`You are ${age} years old, you qualify for a senior discount`)
+        return (age)}
+    if (age < 16){
+        console.log(`You are ${age} years old, you can't drive Bozo`)
+        return (age)}
+    if (age == 44){
+        console.log(`You are ${age} years old, you are the same age as Mister Squirrel `)
+        return (age)}
+}
