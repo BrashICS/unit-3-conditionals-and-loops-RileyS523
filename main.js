@@ -40,3 +40,10 @@ function user(){
         console.log(`You are ${age} years old, you are the same age as Mister Squirrel `)
         return (age)}
 }
+
+function user_name(){
+    let name = prompt("Hello there Guy, gal. or non-binary pal, what is your name?")
+    if (name == "Mr.Squirrel"){
+        console.log("🐿️")
+    }
+}
