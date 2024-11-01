@@ -48,7 +48,7 @@ function user_name(){
     }
     let str_length= string.length(name)
     if (str_length <= 7){
-        console.log(`${name} is a long name`)
+        console.log(`${name} is a long name`)}
     if (str_length > 3)
         {console.log(`${name} is a short name`)
     }
