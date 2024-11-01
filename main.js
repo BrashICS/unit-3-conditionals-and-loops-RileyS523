@@ -12,7 +12,7 @@
 'use strict';
 
 /*** Event Listeners ***/
-
+document.getElementById("halloween_adventure").addEventListener("click", start_game);
 
 
 /*** Functions ***/
@@ -45,6 +45,12 @@ function user_name(){
     let name = prompt("Hello there Guy, gal. or non-binary pal, what is your name?")
     if (name == "Mr.Squirrel"){
         console.log("🐿️")
+    }
+    let str_length= string.length(name)
+    if (str_length <= 7){
+        console.log(`${name} is a long name`)
+    if (str_length > 3)
+        {console.log(`${name} is a short name`)
     }
 }
 
