@@ -59,6 +59,9 @@ function start_game(){
     if (choice == 2){
         gym()
     }
+    if (choice == 3){
+        abyss()
+    }
 }
 
 function library(){
@@ -66,6 +69,7 @@ function library(){
     let choice_lib=prompt("(The ghostly voice continues) Care to stay? ('1' if yes and '2' if no)") 
     if (choice_lib == 1){
         alert("Immediately, you notice a horrid stench, it is clear that the place is a breading ground for bacteria, as you try and escape, the door locks from the outside, and you slowly die of Dysentery")
+        console.log("You died")
         return ("game over")
     }
     if (choice_lib == 2){
@@ -75,11 +79,13 @@ function library(){
         if (action == 1){
             alert("You pull away and go into a full sprint, trying to get away from the ghost")
             alert("You barely make it out of the Haunted School with your life")
+            console.log("You lived")
             return(`You survived`)
         }
         if (action == 2){
             alert("You feel the hand move off your shoulder, as you turn around to face the ghost, you slowly start to freeze to death")
             alert("You manage to turn around to see the ghost is a tall man, a litle bit over 6ft tall, a brown jacket, a red and black scarf, and white earmuffs, long black hair that falls down his back, he is the last thing you see before you freeze to your core")
+            console.log("You died (clover ending)")
             return(`you died`)
         }
     }
@@ -95,16 +101,19 @@ function gym(){
         e = prompt("What do you do as you fall? do you accept your death(1) or do you think about your past(2)")
         if (e==1){
             alert("Time around you seems to speed up as you fall to your death, which is quick and painless")
+            console.log("You died")
             return(`you died`)
         }
         if (e==2){
             alert("You start to fall slower then normal, hitting the ground softly")
             alert("You are left in the hole to starve")
+            console.log("You died")
             return(`you died`)
         }
     }
     if (choice_gym ==2){
         alert("As you stand still, it feels like an eternity, but eventually the hall around you starts to fade out of existence")
+        console.log("You lived")
         return(`You Live`)
     }
     if (choice_gym ==3){
@@ -116,6 +125,26 @@ function gym(){
         alert("'Prepare your body and mind young one, for you have run out of time'")
         alert("She raises you up off the ground and you hang from a crusifix")
         alert("You are left to die")
+        console.log("You died (Zoe Ending)")
         return(`you died`)
+    }
+}
+//loop no work, Srry
+function abyss(){
+    alert(`As you head down the staircase, it seems to be taking forever to get to the bottom`)
+    let torch = prompt("You notice a torch with a green flame, do you walk by(1) or take the torch?(2)")
+    if (torch == 1){
+        alert("You walk through the darkness") 
+        alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("");alert("");alert("");alert("");
+        alert("after wandering for so long, you die of starvation")
+        console.log("You died")
+    }
+    if (torch == 2){
+        alert("you pick up the torch and you notice a dark humanoid squid entity, it is about 4ft tall, and has a face that resembles a monster from a game you once played (Search shadow leviathen for the face), the face is glowing white, then it attacks you, as it is about to kill you, you hear a voice telling you")
+        alert("the voice is haughty, almost mocking you")
+        alert("Care to try again?")
+        alert("but at this point, it is to late, you are crushed to death by the monsters tenticals")
+        console.log("You died")
+        return("You died") 
     }
 }
