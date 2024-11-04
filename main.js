@@ -53,8 +53,37 @@ function user_name(){
         {console.log(`${name} is a short name`)
     }
 }
+//else if
+
+function menu(){
+    let message = `Hi! Please make a selection:
+    1 - Play
+    2 - Options
+    3 - DLC
+    4 - Check for Updates
+    5 - Exit
+    `
+    // Prompt with the menu
+    let selection = Number(prompt(message));
+    if(selection == 1){
+        alert(`Let's Play!`)
+        play()
+    }else if(selection == 2){
+        alert(`You selected Options`)
+    }else if(selection == 3){
+        alert(`No New DLC at this time for In Stars And Time`)
+    }else if(selection == 4){
+        alert(`Everything is up to date with In Stars And Time`)
+    }else if(selection == 5){
+        alert(`Cya!`)
+    }
+}
+function play(){}
 
 
+
+
+//Halloween
 function start_game(){
     let name = prompt("Since you are ready for a scare. Will you tell me your name?")
     alert(`(You hear a ghostly voice in your ear)Welcome ${name}, welcome to your new home, in Haunted St. Matthew HS...`)
