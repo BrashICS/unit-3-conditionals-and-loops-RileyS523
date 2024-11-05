@@ -67,7 +67,17 @@ function menu(){
     let selection = Number(prompt(message));
     if(selection == 1){
         alert(`Let's Play!`)
-        play()
+        let dif = prompt(`Select a Difficulty
+            1 - Easy
+            2 - Medium
+            3 - Hard`)
+        if (dif == 1){
+            alert(`You selected the easy route Stardust`)
+        }else if (dif == 2){
+            alert(`Most people pick this one Stardust, so original`)
+        }else if (dif == 3){
+            alert(`Hey there Stardust, ready for a challenge?`)
+        }else {alert(`Invalid input`)}
     }else if(selection == 2){
         alert(`You selected Options`)
     }else if(selection == 3){
@@ -76,12 +86,50 @@ function menu(){
         alert(`Everything is up to date with In Stars And Time`)
     }else if(selection == 5){
         alert(`Cya!`)
+    }else {
+        alert(`Invalid input`)
     }
 }
-function play(){}
 
+function greeting(hour){
+    if (hour >= 0 && hour<=11 || hour == 24){
+        return `Good Morning Stardust`
+    }else if (hour >= 12 && hour <=17){
+        return `Good Afternoon Stardust`
+    }else if (hour >=18 && hour <=23){
+        return `Good Evening Stardust`
+    }else {
+        return `You have an error Stardust, I am only asking for hour and not minutes if that is your problem, if not, get bent`
+    }
+}
+// /else/
 
+function is_number(num){
+    if (typeof num == "number"){
+        return true
+    }
+    else {
+        return false
+    }
+}
 
+function which_day(n){
+    if(n == 1){
+
+    }else if(n == 2){
+
+    }else if(n == 3 ){
+
+    }else if(n == 4){
+        
+    }else if(n == 5){
+        
+    }else if(n == 6){
+
+    }else if(n == 7){
+
+    }else{}
+}
 
 //Halloween
 function start_game(){
