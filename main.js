@@ -114,21 +114,46 @@ function is_number(num){
 }
 
 function which_day(n){
-    if(n == 1){
+    is_number(n)
+    if (n == true){
+        if(n == 1){
+            return `Sunday`
+        }else if(n == 2){
+            return `Monday`
+        }else if(n == 3 ){
+            return `Tuesday`
+        }else if(n == 4){
+            return `Wedenesday`
+        }else if(n == 5){
+            return `Thursday`
+        }else if(n == 6){
+            return `Friday`
+        }else if(n == 7){
+            return `Saturday`
+        }else{
+            return `uh... I think something went wrong, would you mind trying again?`
+        }
+    }
+    else{return `uh... I think something went wrong, would you mind trying again?`}
+    
+}
 
-    }else if(n == 2){
-
-    }else if(n == 3 ){
-
-    }else if(n == 4){
-        
-    }else if(n == 5){
-        
-    }else if(n == 6){
-
-    }else if(n == 7){
-
-    }else{}
+function guess_10(){
+    let guess = +prompt(`Guess a Number from 1 to 10, No higher, No lower`)
+    let answer = randint(1,10)
+    let is_a_num = is_number(guess)
+    if(is_a_num == false){
+        alert(`If you typed in "one" instead of "1", please try again, if not, get bent`)
+        return `If you typed in "one" instead of "1", please try again, if not, get bent`
+    }
+    else if(guess == answer){
+        alert(`You got it right, the number was ${answer}`)
+        return answer
+    } 
+    else if (guess != answer){
+        alert(`You Guessed incorrectly, the answer was ${answer}`)
+        return answer
+    }
 }
 
 //Halloween
