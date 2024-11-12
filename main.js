@@ -156,6 +156,38 @@ function guess_10(){
     }
 }
 
+
+
+
+
+//while
+function countdown(start, stop){
+    let count = 1
+    while(start > stop){
+        console.log(start)
+        ++count
+        --start
+    }
+    console.log(stop)
+    return count
+}
+
+function random_until(min,max,stop){
+    let guess = randInt(min,max)
+    let time = 1
+    while(guess != stop){
+        console.log(guess)
+        guess = randInt(min,max)
+        time++
+    }    
+    console.log(time)
+    return stop
+}
+
+
+
+
+
 //Halloween
 function start_game(){
     let name = prompt("Since you are ready for a scare. Will you tell me your name?")
