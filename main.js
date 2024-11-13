@@ -197,8 +197,23 @@ function average(n){
 }
 
 
+//STRINGS YOOOOOOOO POG AAAAAAAA
 
+function print_reverse(str){
+    let num_char = str.length - 1
+    let str_rev = NaN
+    while (num_char != -1){
+        
+    }
+}
 
+//d is 100 and g is 104
+function dragons_and_goblins(str){
+    let dragons_charcode = 100
+    let goblins_charcode = 104
+    console.log(`Dragons: ${dragon}
+        Goblins: ${goblin}`)
+}
 
 
 
