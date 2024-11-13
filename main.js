@@ -173,6 +173,7 @@ function countdown(start, stop){
 }
 
 function random_until(min,max,stop){
+    if(stop > max || stop <min || max <= min){return -1}
     let guess = randInt(min,max)
     let time = 1
     while(guess != stop){
@@ -180,9 +181,34 @@ function random_until(min,max,stop){
         guess = randInt(min,max)
         time++
     }    
-    console.log(time)
+    console.log(`It took ${time} attempts`)
     return stop
 }
+
+function average(n){
+    let avg = 0
+    let count = 1
+    while(count<=n){
+        avg += +prompt(`Please enter value ${count}/${n}`)
+        count++
+    }
+    avg = round(avg / n , 1)
+    console.log(`The average is ${avg}`)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
