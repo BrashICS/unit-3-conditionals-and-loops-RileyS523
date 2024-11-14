@@ -200,19 +200,33 @@ function average(n){
 //STRINGS YOOOOOOOO POG AAAAAAAA
 
 function print_reverse(str){
-    let num_char = str.length - 1
-    let str_rev = NaN
-    while (num_char != -1){
-        
+    let output = ""
+    let i = str.length-1
+    while (i>=0){
+        output+=str[i]
+        i--
     }
+    console.log(output)
 }
 
 //d is 100 and g is 104
 function dragons_and_goblins(str){
+    let length_of_str = str.length
     let dragons_charcode = 100
-    let goblins_charcode = 104
+    let goblins_charcode = 103
+    let dragon = 0
+    let goblin = 0
+    while (length_of_str != -1){
+        if (str.charCodeAt(length_of_str) == dragons_charcode){
+            ++dragon
+        }
+        if (str.charCodeAt(length_of_str) == goblins_charcode){
+            ++goblin
+        }
+        length_of_str--
+    }    
     console.log(`Dragons: ${dragon}
-        Goblins: ${goblin}`)
+Goblins: ${goblin}`)
 }
 
 
@@ -316,7 +330,56 @@ function abyss(){
     let torch = prompt("You notice a torch with a green flame, do you walk by(1) or take the torch?(2)")
     if (torch == 1){
         alert("You walk through the darkness") 
-        alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("You continue to walk through the darkness");alert("");alert("");alert("");alert("");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("You continue to walk through the darkness");
+        alert("");
+        alert("");
+        alert("");
+        alert("");
         alert("after wandering for so long, you die of starvation")
         console.log("You died")
     }
