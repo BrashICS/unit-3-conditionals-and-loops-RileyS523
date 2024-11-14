@@ -209,7 +209,7 @@ function print_reverse(str){
     console.log(output)
 }
 
-//d is 100 and g is 104
+//d is 100 and g is 103
 function dragons_and_goblins(str){
     let length_of_str = str.length
     let dragons_charcode = 100
@@ -229,7 +229,15 @@ function dragons_and_goblins(str){
 Goblins: ${goblin}`)
 }
 
-
+function add(str){
+    let value = 0
+    let i = str.length - 1
+    while (i >= 0){
+        value = value + Number(str[i])
+        i--
+    }
+    console.log(value)
+}
 
 
 
