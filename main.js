@@ -239,7 +239,25 @@ function add(str){
     console.log(value)
 }
 
+// do while
 
+function print_odd(n){
+
+}
+function parrot(){
+    let response;
+    let parrot_speak;
+    do {
+        response = prompt("Please some text or the word 'quit' to exit:")
+        if (response.toLowerCase == "quit"){
+            alert(`GOODBYE! 🦜`)
+        }
+        if (response.toLowerCase != "quit"){
+            parrot_speak = response.toUpperCase
+            alert(`${parrot_speak}`)
+        }
+    } while(reponse != "quit") 
+}
 
 
 
