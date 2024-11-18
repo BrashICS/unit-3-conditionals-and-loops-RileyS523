@@ -259,14 +259,26 @@ function parrot(){
     } while(reponse != "quit") 
 }
 
+//for
 
+function count_up(start, stop){
+    for(let num = start; num <= stop; num++){
+        console.log(num)
+    }
+}
 
+function count_down(start, stop){
+    for(let num = start; num >= stop; num--){
+        console.log(num)
+    }
+}
 
-
-
-
-
-
+function print_chars(str, step){
+    for(let str_pos = 0; str_pos <= str.length; str_pos += step){
+        let string_char = str[str_pos]
+        console.log(string_char)
+    }
+}
 
 
 //Halloween
