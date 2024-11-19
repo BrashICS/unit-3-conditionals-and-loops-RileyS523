@@ -280,6 +280,39 @@ function print_chars(str, step){
     }
 }
 
+function sum(n){
+    let total = 0;
+    if(n==0){return 1}
+    for(let x = 1; x<=n; x++){
+        total += x
+    }
+    return total
+}
+
+function count4(begin, end){
+    let returnval = 0
+    for(let count = 0; count<=end; count++){
+        if(count % 4 == 0){
+            returnval++
+        }
+    }
+    return returnval
+}
+function sum_divisible(n, x){
+    let sum = 0
+    for(let i = 0; i<=n; i++){
+        if(i%x == 0){
+            sum += i
+        }
+    }
+    
+    
+    return sum
+}
+
+
+
+
 
 //Halloween
 function start_game(){
