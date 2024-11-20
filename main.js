@@ -291,13 +291,14 @@ function sum(n){
 
 function count4(begin, end){
     let returnval = 0
-    for(let count = 0; count<=end; count++){
+    for(let count = begin; count<=end; count++){
         if(count % 4 == 0){
             returnval++
         }
     }
     return returnval
 }
+
 function sum_divisible(n, x){
     let sum = 0
     for(let i = 0; i<=n; i++){
